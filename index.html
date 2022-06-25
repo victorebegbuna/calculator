@@ -1,58 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
 <script>
-    function ac()
-        {
-            document.getElementbyid("res").value=""
-        }
-        function show(input)
-        {
-            document.getElementById("res").value=input;
-        }
-    
-</script>
+    let x, y;
 
-</head>
-<body>
-<table border="1">
-    <caption><h2></h2>Simple Calculator</caption>
-    <tr>
-        <td colspan="3"><input type="text" id="res"></td>
-        <td><button onclick="ac()">AC</button></td>
-    </tr>
-             
-    <tr>
-        <td><button onclick="show('1')">1</button></td>
-        <td><button onclick="show('2')">2</button></td>
-        <td><button onclick="show('3')">3</button></td>
-        <td><button onclick="show('+')">+</button></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>   
-       
-           
-    
-</body>
-</html>
+x = parseInt(prompt("Enter the first Number"));
+y = parseInt(prompt("Enter the second number"));
+let z = x+y;
+let a = x-y;
+let b = x*y;
+let c = x/y;
+alert("The addition of both numbers is: "+z);
+alert("The subtraction of both numbers is: "+a);
+alert("The multiplication of both number is: "+b);
+alert("The division of both numbers is: "+c);
+
+</script>
